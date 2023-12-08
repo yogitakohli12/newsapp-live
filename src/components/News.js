@@ -37,12 +37,9 @@ capitalizefirstletter = (string) => {
    })
    this.props.setprogress(100);
   }
-
-
    async componentDidMount(){
     this.Updatenews();
   }
-
 fetchMoreData = async() => {
   
   this.setState({page:this.state.page + 1})
@@ -55,14 +52,9 @@ fetchMoreData = async() => {
     loading:true
    })
 };
-
-
   render() {
-  
     return (
-      
       <div className="contain">
-        
         <h4 className=' text-center '  style={{paddingTop:"40px"}}>TopTodaY -From {this.capitalizefirstletter(this.props.category)} Top Headlines</h4>
       {/*{this.state.loading && <Loading/>}*/}   
       <InfiniteScroll
@@ -71,7 +63,6 @@ fetchMoreData = async() => {
           hasMore={this.state.articles.length !== this.state.totalResults}
           >
     </InfiniteScroll>
-  
       <div className="container"id='container' >
       <div className="container">
         <div className="row my-2 mx-4" style={{width:"90%" }}>

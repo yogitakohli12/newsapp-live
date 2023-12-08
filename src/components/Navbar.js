@@ -16,53 +16,47 @@ export default class Navbar extends Component {
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/">Home</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/business">Business</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/entertainment">Entertainment</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/general">General</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/health">Health</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/science">Science</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/sports">Sports</Link>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/technology">Technology</Link>
               </li>
-              
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             US NEWS
               </Link>
             <ul className="dropdown-menu">
             <li><Link className="dropdown-item" to="/us/allnews">ALL NEWS</Link></li>
-           
-            
+            <li><Link className="dropdown-item" to="/us/business">Business</Link></li>
+            <li><Link className="dropdown-item" to="/us/entertainment">Entertainment</Link></li>
+            <li><Link className="dropdown-item" to="/us/general">General</Link></li>
+            <li><Link className="dropdown-item" to="/us/health">Health</Link></li>
+            <li><Link className="dropdown-item" to="/us/science">Science</Link></li>
+            <li><Link className="dropdown-item" to="/us/sports">Sports</Link></li>
+            <li><Link className="dropdown-item" to="/us/technology">Technology</Link></li>
             
            </ul>
+
+
+
            </li>
-              
             </ul>
-            
-            {/*<form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button className="btn btn-outline-success" type="submit">Search</button>
-    </form>*/}
           </div>
         </div>
       </nav>

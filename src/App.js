@@ -3,14 +3,10 @@ import './App.css';
 import React, { Component } from 'react'
 import Navbar from './components/Navbar'
 import News from './components/News'
-import Loading from './components/Loading'
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from "react-scroll-to-top";
 import LoadingBar from 'react-top-loading-bar'
 import Carousal from './components/Carousal';
-
-
 
 export default class App extends Component {
   apikey=process.env.REACT_APP_NEWS_APIKEY
@@ -23,12 +19,9 @@ state = {
 setprogress=(progress)=>{
   this.setState({progress:progress})
 }
-
-
   render() {
     return (
       <BrowserRouter  id="contain">
-     
       <div className="App"> 
         < Navbar />
         <Carousal/>
@@ -36,9 +29,7 @@ setprogress=(progress)=>{
         color='#f11946'
         progress={this.state.progress}
       />
-
         <ScrollToTop smooth />
-
         <div  className='animate'>
         <Routes>
           <Route exact path="/" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="general" pagesize={this.pagesize} country={this.country} category="general"/>} />
@@ -50,11 +41,19 @@ setprogress=(progress)=>{
           <Route exact path="/sports" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="sports" pagesize={this.pagesize} country={this.country} category="sports"/>} />
           <Route exact path="/technology" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="technology" pagesize={this.pagesize} country={this.country} category="technology"/>} /> 
           <Route exact path="/us/allnews" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category=""/>} /> 
+        
+          <Route exact path="/us/business" element={<News setprogress = {this.setprogress} apikey={this.apikey}   key="" pagesize={this.pagesize} country="us" category="business"/>} />
+          <Route exact path="/us/entertainment" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category="entertainment"/>} />
+          <Route exact path="/us/general" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category="general"/>} />
+          <Route exact path="/us/health" element={<News setprogress = {this.setprogress}  apikey={this.apikey} key="" pagesize={this.pagesize} country="us" category="health"/>} />
+          <Route exact path="/us/science" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category="science"/>} />
+          <Route exact path="/us/sports" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category="sports"/>} />
+          <Route exact path="/us/technology" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category=""/>} /> 
+          <Route exact path="/us/allnews" element={<News setprogress = {this.setprogress} apikey={this.apikey}  key="" pagesize={this.pagesize} country="us" category=""/>} /> 
+        
+
         </Routes>
         </div>
-
-        
-       
         </div>
         <div    id="bootom"  style={{ color:"white" , paddingTop:"30px"  , height:"200px" }}>
           <div id='bot'>

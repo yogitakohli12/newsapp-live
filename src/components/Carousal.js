@@ -19,9 +19,8 @@ export class Carousal extends Component {
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item>
-        <img src="https://india.postsen.com/temp/resized/medium_2023-08-07-bf71bb5b17.jpg" alt="image"  style={{height:"250px" , width:"100%"}} />
+        <img src="https://media.istockphoto.com/id/1311148884/vector/abstract-globe-background.jpg?s=612x612&w=0&k=20&c=9rVQfrUGNtR5Q0ygmuQ9jviVUfrnYHUHcfiwaH5-WFE=" alt="image"  style={{height:"250px" , width:"100%"}} />
         <Carousel.Caption>
           <h3></h3>
           <p></p>
@@ -35,11 +34,6 @@ export class Carousal extends Component {
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
-      
-    
-      
-      
-      
     </Carousel>
       </div>
     )

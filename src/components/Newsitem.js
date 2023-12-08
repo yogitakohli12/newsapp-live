@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-
 export default class Newsitem extends Component {
-  
-
   render() {
     let {title , description ,imageurl , newUrl ,author ,date , source} = this.props
     return (
